@@ -1,0 +1,41 @@
+[  
+    {  
+        "name": "General Settings",  
+        "settings": [  
+            {  
+                "type": "text",  
+                "id": "store_name",  
+                "label": "Store Name",  
+                "default": "My Online Store"  
+            },  
+            {  
+                "type": "color",  
+                "id": "primary_color",  
+                "label": "Primary Color",  
+                "default": "#000000"  
+            }  
+        ]  
+    },  
+    {  
+        "name": "Homepage Settings",  
+        "settings": [  
+            {  
+                "type": "textarea",  
+                "id": "homepage_description",  
+                "label": "Homepage Description",  
+                "default": "Welcome to our online store!"  
+            }  
+        ]  
+    },  
+    {  
+        "name": "Footer Settings",  
+        "settings": [  
+            {  
+                "type": "text",  
+                "id": "footer_text",  
+                "label": "Footer Text",  
+                "default": "© 2026 My Online Store"  
+            }  
+        ]  
+    }  
+]
