@@ -1,0 +1,28 @@
+{% schema %}
+  {
+    "name": "Featured Products",
+    "settings": [
+      {
+        "type": "product_list",
+        "id": "featured_products",
+        "label": "Select products to showcase",
+        "info": "Choose products that you would like to feature on your homepage.",
+        "default": []
+      }
+    ]
+  }
+{% endschema %}
+
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    {% for product in section.settings.featured_products %}
+      <div class="product-item">
+        <h3>{{ product.title }}</h3>
+        <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+        <p>{{ product.price | money }}</p>
+        <a href="{{ product.url }}" class="btn">View Product</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
