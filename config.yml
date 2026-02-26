@@ -1,0 +1,38 @@
+# Shopify Theme Configuration
+
+# General settings
+name: 'My Shopify Theme'
+description: 'A custom theme for Shopify store'
+authors:
+  - name: 'Your Name'
+    email: 'your-email@example.com'
+
+# Layout settings
+layout:
+  - name: 'default'
+
+# Assets settings
+assets:
+  - 
+    name: 'styles.scss.liquid'
+    type: 'stylesheet'
+  - 
+    name: 'script.js'
+    type: 'javascript'
+
+# Sections
+sections:
+  - name: 'header'
+    settings:
+      logo: 'logo.png'
+  - name: 'footer'
+    settings:
+      copyright: '© 2026 Your Store, All rights reserved.'
+
+# Settings Schema
+settings_schema:
+  - name: 'Theme settings'
+    settings:
+      - type: 'color'
+        id: 'header_bg'
+        label: 'Header Background Color'
